@@ -1,0 +1,216 @@
+.modal-backdrop {
+     z-index:0;
+}
+.modal-dialog{
+	width: 670px;
+}
+.navbar-default{
+	border-color:#242424;
+}
+.img-center {
+    margin: 0 auto;
+}
+a {
+	color: #F63200;
+}
+a:hover{
+	color: #F63200;
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+	color: #F63200;
+}
+#map{
+	width:640px;
+	height:640px;
+	margin:0 auto;
+}
+#pac-input {
+  background-color: #fff;
+  font-size: 15px;
+  padding: 0 11px 0 13px;
+  margin: 8px 0 8px 8px;
+  border-radius:0px;
+  box-shadow: 1px 1px 10px #ccc;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+#done{
+  margin: 8px 0 8px 8px;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.price_table_container{
+	text-align:center;
+	color:#666;
+	margin-top:35px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.price_table_heading{
+	font-size:36px;
+	padding:10px;
+	background:#EEE;
+}
+
+.price_table_row {
+    padding:15px;
+	background: #FFF;
+}
+
+.cost{
+	padding:30px;
+	font-size:30px;
+}
+.cost span{
+	font-size:15px;
+}
+
+.price_table_row:nth-of-type(even) {
+    background: #F8F8F8;
+}
+.btn{
+	border-radius:0px;
+}
+
+.recommended{
+/*USER DEFINED COLOUR*/	
+background:#FF3A3A; 
+color:#FFF;
+/*USER DEFINED COLOUR*/	
+padding:3px 0 3px 0;
+margin-top:10px;  
+text-align:center;
+margin-bottom:-35px;
+font-family: 'Open Sans', sans-serif;
+}
+
+.spacer{width:100%;height:50px;}
+
+/*Already Defined Colours*/
+/*Background*/
+.primary-bg{background:#337AB7;color:#FFF;}
+.success-bg{background:#5CB85C;color:#FFF;}
+.info-bg{background:#5BC0DE;color:#FFF;}
+.warning-bg{background:#F0AD4E;color:#FFF;}
+.danger-bg{background:#D9534F;color:#FFF;}
+.dark-bg{background:#444;color:#FFF;}
+.royal-bg{background:#8E74E2;color:#FFF;}
+.static-bg{background:#2BB0A6;color:#FFF;}
+
+/*Only Text Colours*/
+.primary-text{background:#FFF;color:#337AB7;}
+.success-text{background:#FFF;color:#5CB85C;}
+.info-text{background:#FFF;color:#5BC0DE;}
+.warning-text{background:#FFF;color:#F0AD4E;}
+.danger-text{background:#FFF;color:#D9534F;}
+.dark-text{background:#FFF;color:#444;}
+.royal-text{background:#FFF;color:#8E74E2;}
+.static-text{background:#FFF;color:#2BB0A6;}
+
+/*Additional Button styles*/
+
+/*BTN-DARK*/
+.btn-dark {
+  color: #fff;
+  background-color: #444;
+  border-color: #444;
+}
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark.focus,
+.btn-dark:active,
+.btn-dark.active,
+.open > .dropdown-toggle.btn-dark {
+  color: #fff;
+  background-color: #222;
+  border-color: #222;
+}
+.btn-dark:active,
+.btn-dark.active,
+.open > .dropdown-toggle.btn-dark {
+  background-image: none;
+}
+
+/*BTN-ROYAL---------*/
+.btn-royal {
+  color: #fff;
+  background-color: #8E74E2;
+  border-color: #8E74E2;
+}
+.btn-royal:hover,
+.btn-royal:focus,
+.btn-royal.focus,
+.btn-royal:active,
+.btn-royal.active,
+.open > .dropdown-toggle.btn-royal {
+  color: #fff;
+  background-color: #7451E8;
+  border-color: #7451E8;
+}
+.btn-royal:active,
+.btn-royal.active,
+.open > .dropdown-toggle.btn-royal {
+  background-image: none;
+}
+
+/*BTN-STATIC---------*/
+.btn-static {
+  color: #fff;
+  background-color: #2BB0A6;
+  border-color: #2BB0A6;
+}
+.btn-static:hover,
+.btn-static:focus,
+.btn-static.focus,
+.btn-static:active,
+.btn-static.active,
+.open > .dropdown-toggle.btn-static {
+  color: #fff;
+  background-color: #07A094;
+  border-color: #07A094;
+}
+.btn-static:active,
+.btn-static.active,
+.open > .dropdown-toggle.btn-static {
+  background-image: none;
+}
+
+.footer {
+    background: #242424 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 40px;
+    position:relative;
+    margin-bottom:0;
+}
+.footer .footer-col a {
+    color: #607D8B;
+}
+.footer .bottom-bar {
+    background: #1e1e1e none repeat scroll 0 0;
+    color: #b3b3b3;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.hidden{
+	display:none;
+}
+.visible{
+	display:block;
+}

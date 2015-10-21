@@ -1,9 +1,9 @@
 <?php
 session_start(); 
 $dbHost = 'localhost';
-$dbUser = 'hotcity';
-$dbPass = 'hotcity@1234';
-$dbName = 'hotcityAR';
+$dbUser = 'username';
+$dbPass = 'pass';
+$dbName = 'dbARname';
 $dbC = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName)
         or die('Error Connecting to MySQL DataBase');
 		

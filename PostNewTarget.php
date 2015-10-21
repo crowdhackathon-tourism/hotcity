@@ -6,8 +6,8 @@ require_once 'SignatureBuilder.php';
 class PostNewTarget{
 
 	//Server Keys
-	private $access_key 	= "d7c2d2e2dd91715402ffe878a6691d154d5b6f7d";//"29faf51d6cb7374ec3c28ab1b61ae4bdcc38754e";
-	private $secret_key 	= "a16ef432047c3d57c7e88a7e67a27c34b51000b6";//"0fa0946edf3d2e766ed8c46524f481f4cfb4229c";
+	private $access_key 	= "[ Get your access key from vuforia developer account ]";
+	private $secret_key 	= "[ Get you secret key from vuforia developer account ]";
 	
 	//private $targetId 		= "eda03583982f41cdbe9ca7f50734b9a1";
 	private $url 			= "https://vws.vuforia.com";
@@ -23,17 +23,10 @@ class PostNewTarget{
 	function PostNewTarget(){
 		$this->data = json_decode($_SESSION['data'],true);
 		$this->basedir = "Targets/".$this->data["userid"]."/";
-		//print_r($this->data);
 		$date = date('mdY_h:i:s', time());
 		$this->targetName = $this->data["userid"]."_".$date;
 		$this->imageLocation .= $this->data["centerlat"].",".$this->data["centerlng"]."&zoom=16&size=640x640&format=jpg&style=gamma:0.5 ";
-		/*$points = array("areaid"=>$data["areaid"],"point1"=>array("p1lat"=>$data['nelat'],'p1lng'=>$data['nelng']),
-		"point2"=>array("p2lat"=>$data['nelat'],'p2lng'=>$data['swlng']),
-		"point3"=>array("p3lat"=>$data['swlat'],'p3lng'=>$data['nelng']),
-		"point4"=>array("p4lat"=>$data['swlat'],'p4lng'=>$data['swlng']));
 		
-		print_r($points);
-		*/
 		$metadata = array("userid"=>$this->data['userid'],"targetname"=>$this->targetName,"areaid"=>$this->data['areaid'],"mlat"=>$this->data["mlat"],"mlng"=>$this->data['mlng'],"zeropointlat"=>$this->data['zero_point_lat'],"zeropointlng"=>$this->data['zero_point_lng']);
 		$this->jsonRequestObject = json_encode( array( 'width'=>640.0 , 'name'=>$this->targetName , 'image'=>$this->getImageAsBase64() , 'application_metadata'=>base64_encode(json_encode($metadata)) , 'active_flag'=>1 ) );
 
@@ -108,9 +101,9 @@ class PostNewTarget{
 	
 	private function dbInsert($targetid){
 		$dbHost = 'localhost';
-		$dbUser = 'hotcity';
-		$dbPass = 'hotcity@1234';
-		$dbName = 'hotcityAR';
+		$dbUser = 'username';
+		$dbPass = 'pass';
+		$dbName = 'dbARname';
 		$dbC = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName)
 				or die('Error Connecting to MySQL DataBase');
 		mysqli_set_charset($dbC, "utf8");

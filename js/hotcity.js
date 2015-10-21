@@ -49,10 +49,7 @@ function uploadDataToServer(latlng) {
     }
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            //document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
-      			staticlink.href =  xmlhttp.responseText.split("/targets")[1];
-      			//var fsqdetails = {userid:localStorage.getItem('user'),centerlat:latlng.centerlat,centerlng:latlng.centerlng};
-      			//sendToFSQ(fsqdetails);
+      		staticlink.href =  xmlhttp.responseText.split("/targets")[1];
             requestPOIsAJAX();
 
         }
@@ -85,22 +82,12 @@ function requestPOIsAJAX() {
         }
     }
     xmlhttp.open("POST", "POI.php", true);
-    //xmlhttp.setRequestHeader("Content-type", "application/json");
     xmlhttp.send(null);
 }
 
 
 function showMarkersOnMap(pois) {
-    //var bounds = new google.maps.LatLngBounds(sw, ne);
     console.log(pois);
-    //console.log(pois.length);
-    /*
-    map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 12,
-      center: new google.maps.LatLng(38.2494, 21.7452),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-   */
     var i, marker;
     var counter = 0;
 

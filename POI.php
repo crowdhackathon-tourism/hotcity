@@ -57,16 +57,6 @@ class POI{
 			//$ratingColor = $item->venue->ratingColor;
 
 			$mastercat = $this->getFsqMasterCategory($json_output, $category);
-			//('4d4b7104d754a06370d81259', 'Τέχνες & Διασκέδαση', 'Arts & Entertainment'),
-			//('4d4b7105d754a06372d81259', 'Πανεπιστήμιο & Κολλέγιο', 'College & University'),
-			//('4d4b7105d754a06374d81259', 'Φαγητό', 'Food'),
-			//('4d4b7105d754a06377d81259', 'Εξωτερικοί χώροι', 'Outdoors & Recreation'),
-			//('4d4b7105d754a06376d81259', 'Νυχτερινή ζωή', 'Nightlife Spot'),
-			//('4d4b7105d754a06375d81259', 'Γραφεία & Επιχειρήσεις', 'Professional & Other Places'),
-			//('4e67e38e036454776db1fb3a', 'Κατοικίες', 'Residence'),
-			//('4d4b7105d754a06378d81259', 'Καταστήματα & Υπηρεσίες', 'Shop & Service'),
-			//('4d4b7105d754a06379d81259', 'Μεταφορές & Μετακίνηση', 'Travel & Transport'),
-			//('4d4b7105d754a06373d81259', 'Δρώμενο', 'Event');
 
 			$this->poiArray[] = array("id"=>$poi_id,"name"=>$name,"distance"=>$distance,"category"=>$category,"mastercat"=>$mastercat,
 			"categoryName"=>$categoryName,"lat"=>$lat,"lng"=>$lng,"rating"=>$rating,"chekcins"=>$checkins);
